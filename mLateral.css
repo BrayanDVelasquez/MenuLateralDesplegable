@@ -1,0 +1,102 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.menuLateral {
+    position: fixed;
+    top: 0;
+    left: -1000px;  
+    height: 100%;
+    width: 25%; 
+
+    background-color: #f9fcf8;
+    
+    z-index: 10000;
+    transition: .5s;
+
+    /* (No mostrado en el video) */
+
+    min-width: 150px;
+    max-width: 1000px;
+   	overflow: auto; /* Permite agregar un scroll cuando sea necesario */
+}
+
+.img-header {
+    width: 100%;
+}
+
+.img-header #btnCerrar {
+    position: absolute;
+    color: black;
+    width: 20%;
+    top: 0;
+    right: 0;
+    padding: 5px;
+    background: rgba(255, 255, 255, 0.829);
+    border: none;
+    outline: none;
+    border-bottom-left-radius: 10px;
+}
+
+.img-header #btnCerrar:hover{
+    background: rgba(255, 255, 255, 0.877);
+    cursor: pointer;
+}
+
+.img-header img {
+    opacity: 1;
+    width: 100%;
+}
+
+.contenido-menuLateral a{
+    color: black;
+    text-decoration: none;
+    box-sizing: border-box;
+    padding: 15px;
+    width: 100%;
+    display: block;
+    transition: all .2s;
+}
+
+.contenido-menuLateral a:hover{
+    color: white;
+    background-color: black;
+}
+
+.contenido-menuLateral hr{
+    margin:5px;
+}
+
+ .contenido-menuLateral span{
+    margin-left:22px;
+    
+    color: #888;
+}
+
+#fondo{
+    position: fixed;
+    top:0;
+    background-color: #191a1994;
+    width: 100%;
+    height: 100vh;
+    display: none;
+}
+
+#btnAbrir{
+    outline: none;
+    cursor: pointer;
+    border: none;
+    padding:15px;
+    border-radius: 5px;
+    background: rgb(109, 39, 223);
+    color: white;
+}
+
+#btnAbrir:hover{
+    background: rgb(122, 44, 247);
+}
